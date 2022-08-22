@@ -1,9 +1,19 @@
 #include <Arduino.h>
+#include <Keypad.h>
+#include <MIDI.h>
 
-void setup() {
-  // put your setup code here, to run once:
+MIDI_CREATE_DEFAULT_INSTANCE();
+
+void setup()
+{
+    MIDI.begin(MIDI_CHANNEL_OMNI);  // Listen to all incoming messages
+    // Read preset json from EEPROM
+    // Get last active bank and preset from EEPROM
 }
 
-void loop() {
-  // put your main code here, to run repeatedly:
+void loop()
+{
+    // Screen
+    // Input
+    // Preset
 }
