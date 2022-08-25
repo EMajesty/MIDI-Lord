@@ -19,8 +19,10 @@
 | Part | Type | Qty |
 | --- | --- |:---:|
 | Enclosure | 1590DD | 1 |
-| Footswitches | SPST momentary | 6 |
-| MIDI connector | Panel DIN | 1 |
+| Footswitches | SPST momentary | 8 |
+| MIDI connector | Panel DIN | 2 |
 | DC jack | 5.5x2.1mm | 1 |
 | Arduino | Pro Micro | 1 |
 | LCD | I2C | 1 |
+| 6N138 | | 1 |
+| Micro usb to panel cable | | 1 |

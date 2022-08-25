@@ -1,0 +1,30 @@
+{
+    "presets": {
+        "1": {
+            "name": "Preset1",
+            "messages": {
+                "1": {
+                    "channel": 1,
+                    "pc": 21
+                },
+                "2": {
+                    "channel": 5,
+                    "pc": 123
+                }
+            }
+        },
+        "2": {
+            "name": "Preset2",
+            "messages": {
+                "1": {
+                    "channel": 3,
+                    "pc": 13
+                }
+            }
+        }
+    },
+    "last": {
+        "bank": 1,
+        "preset": 1
+    }
+}

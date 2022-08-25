@@ -1,12 +1,17 @@
 #include <Arduino.h>
-#include <Keypad.h>
-#include <MIDI.h>
+//#include <MIDI.h>
 
-MIDI_CREATE_DEFAULT_INSTANCE();
+#include "switches.h"
+
+//MIDI_CREATE_DEFAULT_INSTANCE();
 
 void setup()
 {
-    MIDI.begin(MIDI_CHANNEL_OMNI);  // Listen to all incoming messages
+    Serial.begin(9600);
+    footswitches.addEventListener(keypadEvent);
+
+    //MIDI.begin(MIDI_CHANNEL_OMNI);  // Listen to all incoming messages
+    
     // Read preset json from EEPROM
     // Get last active bank and preset from EEPROM
 }
