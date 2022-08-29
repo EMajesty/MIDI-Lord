@@ -26,13 +26,17 @@ void keypadEvent(KeypadEvent key)
     case RELEASED:
         break;
     case HOLD:
-    if (progMode = 0)
-    {
-        if (footswitches.getKeys() == '7','8') // Holding the '+' and '-' buttons simultaneously activates programming mode
+        if (footswitches.getKeys() == '7', '8') // Holding the '+' and '-' buttons simultaneously activates programming mode
         {
-            progMode = 1;
+            if (progMode = 0)
+            {
+                progMode = 1;
+            }
+            else
+            {
+                progMode = 0;
+            }
         }
-    }
         break;
     default:
         break;
