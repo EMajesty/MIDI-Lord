@@ -2,6 +2,7 @@
 
 ![sketch](img/midilord.png "MIDI Lord")
 
+
 ### Libraries used
 
 - `FlashStorage_STM32` by Khoi Hoang
@@ -10,7 +11,8 @@
 - `StreamUtils` by Benoit Blanchon
 - `MIDI Library` by fortyseveneffects
 - `MIDIUSB` by Gary Grewal
-- `LiquidCrystal_I2C` by ejoyneering
+- `LiquidTWI2` by Sam C. Lin
+
 
 ### Parts
 
@@ -24,3 +26,16 @@
 | LCD | I2C | 1 |
 | 6N138 | | 1 |
 | USB C to panel cable | | 1 |
+
+
+### FTDI to STM32
+
+I'm using a ST Link V2 for programming, which has no serial.
+To do serial monitoring I'm using an usb to uart interface.
+
+| FTDI | STM32 |
+|:---:|:---:|
+| GND | GND |
+| VCC | 5V |
+| RX | A9 |
+| TX | A10 |

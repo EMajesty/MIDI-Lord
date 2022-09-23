@@ -1,6 +1,5 @@
 #include <Keypad.h>
 #include <MIDI.h>
-#include <EEPROM.h>
 #include <StreamUtils.h>
 #include <ArduinoJson.h>
 
