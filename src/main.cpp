@@ -1,6 +1,5 @@
 #include <Arduino.h>
 //#include <MIDI.h>
-
 #include "lcd.h"
 //#include "switches.h"
 
