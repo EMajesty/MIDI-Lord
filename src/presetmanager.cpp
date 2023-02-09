@@ -1,0 +1,1 @@
+#include "presetmanager.h"

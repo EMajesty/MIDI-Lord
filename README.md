@@ -11,4 +11,4 @@
 - `StreamUtils` by Benoit Blanchon
 - `MIDI Library` by fortyseveneffects
 - `MIDIUSB` by Gary Grewal
-- `LiquidCrystal_I2C` by enjoyneering
+- `LiquidCrystal_I2C` by 

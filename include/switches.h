@@ -1,15 +1,17 @@
-// #include <Arduino.h>
-// #include <Keypad.h>
+#pragma once
 
-// const uint8_t rows = 2;
-// const uint8_t cols = 4;
-// char keys[rows][cols] = {
-//     {'2','4','6','8'},
-//     {'1','3','5','7'}
-// };
-// uint8_t rowPins[] = {4,5};
-// uint8_t colPins[] = {6,7,8,9};
+#include <Arduino.h>
+#include <Keypad.h>
 
-// Keypad footswitches = Keypad(makeKeymap(keys), rowPins, colPins, rows, cols);
+const uint8_t rows = 2;
+const uint8_t cols = 4;
+char keys[rows][cols] = {
+    {'2','4','6','8'},
+    {'1','3','5','7'}
+};
+uint8_t rowPins[] = {4,5};
+uint8_t colPins[] = {6,7,8,9};
 
-// void keypadEvent(KeypadEvent key);
+Keypad footswitches = Keypad(makeKeymap(keys), rowPins, colPins, rows, cols);
+
+void keypadEvent(KeypadEvent key);
