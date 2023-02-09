@@ -1,22 +1,14 @@
 #pragma once
 
 #include <vector>
-#include "preset.h"
+#include "bank.h"
 
 class PresetManager
 {
 public:
-    PresetManager(/* args */);
+    PresetManager();
     ~PresetManager();
 
 private:
-    std::vector<Preset> _presets;
+    Bank _banks[99];
 };
-
-PresetManager::PresetManager(/* args */)
-{
-}
-
-PresetManager::~PresetManager()
-{
-}
